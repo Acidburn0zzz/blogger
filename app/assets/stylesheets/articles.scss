@@ -1,0 +1,33 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  background: #3f51b5;
+  margin: 2em;
+  font-family: 'Ubuntu Mono';
+}
+
+body {
+  padding: 2em;
+  background: #eee;
+  margin: auto;
+  width: 80%;
+  border-radius: 2.5px;
+  box-shadow: #4b4b4b 0px 5px 10px;
+}
+
+a:link, a:visited {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+ul li a {
+  display: inline-block;
+}
+
+.actions {
+  background: #fff;
+  border-radius: 5em;
+  padding: 20px;
+  font-weight: bolder;
+}
