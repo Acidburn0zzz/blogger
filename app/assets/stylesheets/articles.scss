@@ -12,7 +12,12 @@ body {
   padding: 5pt 10pt;
   background-color: #fff;
   margin: 10pt;
-  border-radius: 5pt;
+  border-radius: 2.5pt;
+}
+.comment_count {
+  color: red;
+  font-size: 1.25em;
+  font-weight: bolder;
 }
 .container {
     padding: 2em;
@@ -39,18 +44,16 @@ ul {
 ul li {
   display: inline-block;
   margin: 25pt 10pt;
-
+  padding: 15pt 20pt;
+  background: #fff;
+  border-radius: 2.5px;
+  box-shadow: 0 1pt 2pt #6b6b6b;
+  transition: box-shadow 0.25s ease-out;
 }
-ul li a:hover {
+ul li:hover {
     box-shadow: 0 1pt 30pt #6b6b6b;
 }
-ul li a {
-    padding: 15pt 20pt;
-    background: #fff;
-    border-radius: 2.5px;
-    box-shadow: 0 1pt 2pt #6b6b6b;
-    transition: box-shadow 0.25s ease-out;
-}
+
 .actions {
   background: #fff;
   border-radius: 5em;
