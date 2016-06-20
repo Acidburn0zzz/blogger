@@ -5,7 +5,6 @@ body {
     background: #3f51b5;
     margin: 0;
     font-family: 'Ubuntu Mono';
-
 }
 .comment {
   display: block;
@@ -15,9 +14,19 @@ body {
   border-radius: 2.5pt;
 }
 .comment_count {
-  color: red;
-  font-size: 1.25em;
-  font-weight: bolder;
+  color: #6b6b6b;
+  font-size: 10pt;
+  font-weight: lighter;;
+}
+.title {
+  font-family: 'serif';
+  font-size: 15pt;
+  font-weight: bold;
+}
+.tag {
+  background: #eee;
+  padding: 2pt 3pt;
+  border-radius: 2.5pt;
 }
 .container {
     padding: 2em;
@@ -33,30 +42,30 @@ body {
     padding: 10pt;
     color: #fff;
 }
-
+td {
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+}
 a:link, a:visited {
   text-decoration: none;
   color: #4b4b4b;
 }
-ul {
-    padding: 0;
-}
-ul li {
-  display: inline-block;
-  margin: 25pt 10pt;
-  padding: 15pt 20pt;
-  background: #fff;
-  border-radius: 2.5px;
-  box-shadow: 0 1pt 2pt #6b6b6b;
-  transition: box-shadow 0.25s ease-out;
-}
-ul li:hover {
-    box-shadow: 0 1pt 30pt #6b6b6b;
-}
-
 .actions {
   background: #fff;
   border-radius: 5em;
   padding: 5px 10px;
   font-weight: bolder;
+}
+.article {
+  display: inline-block;
+  margin: 7pt;
+  padding: 15pt;
+  width: 250pt;
+  background: #fff;
+  border-radius: 2.5pt;
+  box-shadow: 0 1pt 2pt #6b6b6b;
+  transition: box-shadow 0.25s ease-out;
+}
+.article:hover {
+  box-shadow: 0 1pt 30pt #6b6b6b;
 }

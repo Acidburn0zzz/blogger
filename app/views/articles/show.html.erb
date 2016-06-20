@@ -1,4 +1,12 @@
 <h1><%= @article.title %></h1>
+<% unless @article.tags.empty? %>
+  <p>
+    Tags:
+      <% @article.tags.each do |tag| %>
+        <%= link_to tag.name, tag_path(tag), class: "tag" %>
+      <% end %>
+  </p>
+<% end %>
 <p><%= @article.body %></p>
 <h2><%= "#{@article.comments.size} Comment".pluralize(@article.comments.size) %></h2>
 <%= render partial: 'articles/comment', collection: @article.comments %>

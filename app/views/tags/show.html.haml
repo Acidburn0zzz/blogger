@@ -1,0 +1,8 @@
+%h1
+  All articles with tag
+  - @tag.name
+%ul#articles
+  - articles_array = @tag.articles
+  - @tag.articles.each do |article|
+    %li
+      = link_to article.title, article_path(article)

@@ -1,0 +1,30 @@
+-# %h1
+-#   All articles
+-#
+-# %ul#articles
+-#   - @articles.each do |article|
+-#     %li
+-#       = link_to article.title, article_path(article)
+-#       %span.comment_count
+-#         = article.comments.size
+-# = link_to "New Article", new_article_path, class: "actions"
+#article_holder
+  - @articles.each do |article|
+    %table.article
+
+      %tr
+        %td.title(colspan = "2")
+          = link_to article.title, article_path(article)
+      %tr
+        %td.tag_holder(colspan = "2")
+          - article.tags.each do |tag|
+            = link_to tag.name, tag_path(tag), class: "tag"
+      %tr
+        %td.description(colspan = "2")
+          = link_to "#{article.body.slice(0, 100)} ...", article_path(article)
+      %tr
+        %td.time
+          = article.created_at
+        %td.comment_count
+          = article.comments.size.to_s + " comment".pluralize(article.comments.size)
+= link_to "New Articles", new_article_path, class: "actions"
