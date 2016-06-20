@@ -1,6 +1,6 @@
 %h1
   All articles with tag
-  - @tag.name
+  = @tag.name
 %ul#articles
   - articles_array = @tag.articles
   - @tag.articles.each do |article|

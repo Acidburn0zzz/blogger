@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-    background: #3f51b5;
-    margin: 0;
-    font-family: 'Ubuntu Mono';
+  margin: 0;
 }
 .comment {
   display: block;
@@ -13,28 +11,36 @@ body {
   margin: 10pt;
   border-radius: 2.5pt;
 }
-.comment_count {
+.comment_meta td {
   color: #6b6b6b;
+  font-family: 'Ubuntu Mono';
   font-size: 10pt;
   font-weight: lighter;;
 }
 .title {
-  font-family: 'serif';
   font-size: 15pt;
-  font-weight: bold;
+  font-weight: lighter;
 }
 .tag {
   background: #eee;
   padding: 2pt 3pt;
   border-radius: 2.5pt;
+  font-family: 'Ubuntu mono'
+}
+#header {
+  position: fixed;
+  padding: 15pt;
+  background-color: #5be55b;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .container {
     padding: 2em;
-    background: #eee;
+    background: #fff;
     margin: auto;
     width: 80%;
     border-radius: 2.5px;
-    box-shadow: #4b4b4b 0px 5px 10px;
 }
 .flash {
     margin: auto;
@@ -51,10 +57,16 @@ a:link, a:visited {
   color: #4b4b4b;
 }
 .actions {
-  background: #fff;
-  border-radius: 5em;
-  padding: 5px 10px;
-  font-weight: bolder;
+  font-family: 'Ubuntu Mono';
+  background-color: #fff;
+  padding: 5pt;
+  border-radius: 2.5pt;
+}
+.article_img img {
+  width: 100%;
+}
+#image_form img {
+  width: 10em
 }
 .article {
   display: inline-block;
@@ -62,10 +74,13 @@ a:link, a:visited {
   padding: 15pt;
   width: 250pt;
   background: #fff;
-  border-radius: 2.5pt;
-  box-shadow: 0 1pt 2pt #6b6b6b;
-  transition: box-shadow 0.25s ease-out;
+  border: 1pt solid #eee;
+  border-radius: 5pt;
 }
 .article:hover {
-  box-shadow: 0 1pt 30pt #6b6b6b;
+  border-color: #5be55b;
+}
+.tag:hover {
+  background-color: #5be55b;
+  color: #fff;
 }
