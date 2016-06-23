@@ -10,8 +10,19 @@
 <body>
 
 <p class="flash"><%= flash.notice %></p>
-<div class="container">
-    <%= yield %>
+<div id="container">
+  <div id="content">
+    <%= yield%>
+    <hr>
+    <h6>
+      <% if logged_in? %>
+        <%= "Logged in as #{current_user.username}" %>
+        <%= link_to "(Logout)", logout_path %>
+      <% else %>
+        <%= link_to "(Login)", login_path %>
+      <% end %>
+    </h6>
+  </div>
 </div>
 
 
