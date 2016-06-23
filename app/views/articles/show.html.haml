@@ -17,6 +17,6 @@
 
 #header
   = link_to "Back", articles_path, class: "actions"
-  - unless @article.title == "From Faraaz"
+  - if logged_in?
     = link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}, class: "actions"
     = link_to "Edit", edit_article_path(@article), class: 'actions'
