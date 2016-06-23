@@ -1,6 +1,5 @@
 class AuthorSessionsController < ApplicationController
 
-
   def new
 
   end
@@ -19,5 +18,4 @@ class AuthorSessionsController < ApplicationController
     redirect_to(:authors, notice: "Logged out.")
   end
 
-  
 end

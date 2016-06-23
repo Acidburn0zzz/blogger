@@ -13,15 +13,14 @@
 <div id="container">
   <div id="content">
     <%= yield%>
-    <hr>
-    <h6>
+    <div class="footer">
       <% if logged_in? %>
         <%= "Logged in as #{current_user.username}" %>
         <%= link_to "(Logout)", logout_path %>
       <% else %>
         <%= link_to "(Login)", login_path %>
       <% end %>
-    </h6>
+    </div>
   </div>
 </div>
 

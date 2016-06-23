@@ -37,10 +37,13 @@ body {
   width: 100%;
 }
 .flash {
+    position: fixed;
+    right: 20pt;
+    top: 10pt;
     margin: auto;
     text-align: center;
     padding: 10pt;
-    color: #fff;
+    color: red;
 }
 td {
   padding-top: 5pt;
@@ -70,6 +73,16 @@ a:link, a:visited {
   background: #fff;
   border: 1pt solid #eee;
   border-radius: 5pt;
+}
+.footer {
+  position: fixed;
+  width: auto;
+  margin: auto;
+  padding: 10pt;
+  background: #eee;
+  bottom: 0;
+  font-family: 'Ubuntu mono';
+  color: #4b4b4b;
 }
 .article:hover {
   border-color: #5be55b;
