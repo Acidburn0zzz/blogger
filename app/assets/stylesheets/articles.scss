@@ -3,12 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #article_holder {
   padding: 10pt;
+  margin: auto;
+  width: 100%;
 }
 .article {
   padding: 5pt;
   background-color: #fff;
   border: solid 1pt #eee;
   width: 320px;
+  // margin: auto;
   display: inline-block;
 }
 
