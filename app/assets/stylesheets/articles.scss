@@ -8,9 +8,17 @@
   padding: 5pt;
   background-color: #fff;
   border: solid 1pt #eee;
-  width: 250pt;
+  width: 250px;
 }
 
 .article p {
   padding: 5pt;
+}
+
+.title {
+  font: {
+    size: 30pt;
+    family: 'Noto Serif', serif;
+  }
+  padding: -10pt;
 }
