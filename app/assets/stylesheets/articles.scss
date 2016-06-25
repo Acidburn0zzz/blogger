@@ -12,7 +12,7 @@
 }
 
 .article p {
-  padding: 5pt;
+  padding: 2pt;
 }
 
 .title {
@@ -21,4 +21,10 @@
     family: 'Noto Serif', serif;
   }
   padding: -10pt;
+}
+.article_meta {
+  color: #6b6b6b;
+  font: {
+    size: 15px;
+  }
 }

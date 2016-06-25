@@ -4,13 +4,14 @@
 #article_holder
   - @articles.each do |article|
     .article
-      %p.title
-        = link_to article.title, article_path(article)
       %p.tag_holder
         - article.tags.each do |tag|
           = link_to tag.name, tag_path(tag), class: "tag"
+      %p.title
+        = link_to article.title, article_path(article)
+
       %p.description
         = link_to "#{article.body.slice(0, 100)} ...", article_path(article)
       %p.article_meta
-        = article.created_at.strftime("%d /%m /%y")
+        = article.created_at.strftime("%d/%m/%y")
         = "#{article.comments.size.to_s} comment".pluralize(article.comments.size).upcase
