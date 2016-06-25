@@ -8,7 +8,7 @@
   padding: 5pt;
   background-color: #fff;
   border: solid 1pt #eee;
-  width: 250px;
+  width: 300px;
   display: inline-block;
 }
 
@@ -18,10 +18,10 @@
 
 .title {
   font: {
-    size: 30pt;
+    size: 20px;
     family: 'Noto Serif', serif;
+    weight: bold;
   }
-  padding: -10pt;
 }
 .article_meta {
   color: #6b6b6b;
