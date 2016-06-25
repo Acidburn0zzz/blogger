@@ -1,3 +1,9 @@
+#header
+  = link_to "Back", articles_path, class: "actions"
+  - if logged_in?
+    = link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}, class: "actions"
+    = link_to "Edit", edit_article_path(@article), class: 'actions'
+
 %h1
   = @article.title
 
@@ -14,9 +20,3 @@
   = "#{@article.comments.size} Comment".pluralize(@article.comments.size)
 = render partial: 'articles/comment', collection: @article.comments
 = render partial: 'comments/form'
-
-#header
-  = link_to "Back", articles_path, class: "actions"
-  - if logged_in?
-    = link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}, class: "actions"
-    = link_to "Edit", edit_article_path(@article), class: 'actions'

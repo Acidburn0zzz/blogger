@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+.title {
+  font-family: 'Noto Serif', serif;
+}
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+/*.user_info {
+  position: absolute;
+  right: 10pt;
+  top: 10pt;
+  color: #fff;
+}
+.user_info a:link, .user_info a:visited {
+  color: #eee;
+}*/
+.flash {
+  font-weight: bold;
+  margin-right: 20pt;
+  float: right;
+}
+#header {
+  color: #fff;
+  background-color: #311b92;
+  padding: 10pt;
+  a:visited, a:link {
+    color: #fff;
+  }
+}
+.session_info {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  border-top: solid 1pt #eee;
+  padding: 10pt;
+}

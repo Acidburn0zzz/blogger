@@ -1,93 +1,16 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  margin: 0;
-  padding: 20pt;
-}
-.comment {
-  display: block;
-  padding: 5pt 10pt;
-  background-color: #fff;
-  margin: 10pt;
-  border-radius: 2.5pt;
-}
-.comment_meta td {
-  color: #6b6b6b;
-  font-family: 'Ubuntu Mono';
-  font-size: 10pt;
-  font-weight: lighter;;
-}
-.title {
-  font-size: 15pt;
-  font-weight: lighter;
-}
-.tag {
-  background: #eee;
-  padding: 2pt 3pt;
-  border-radius: 2.5pt;
-  font-family: 'Ubuntu mono'
-}
-#header {
-  position: fixed;
-  padding: 15pt;
-  background-color: #5be55b;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.flash {
-    position: fixed;
-    right: 20pt;
-    top: 10pt;
-    margin: auto;
-    text-align: center;
-    padding: 10pt;
-    color: red;
-}
-td {
-  padding-top: 5pt;
-  padding-bottom: 5pt;
-}
-a:link, a:visited {
-  text-decoration: none;
-  color: #4b4b4b;
-}
-.actions {
-  font-family: 'Ubuntu Mono';
-  background-color: #fff;
-  padding: 5pt;
-  border-radius: 2.5pt;
-}
-.article_img img {
-  width: 100%;
-}
-#image_form img {
-  width: 10em
+#article_holder {
+  padding: 10pt;
 }
 .article {
-  display:inline-block;
-  margin: 7pt;
-  padding: 15pt;
+  padding: 5pt;
+  background-color: #fff;
+  border: solid 1pt #eee;
   width: 250pt;
-  background: #fff;
-  border: 1pt solid #eee;
-  border-radius: 5pt;
 }
-.footer {
-  position: fixed;
-  width: auto;
-  margin: auto;
-  padding: 10pt;
-  background: #eee;
-  bottom: 0;
-  font-family: 'Ubuntu mono';
-  color: #4b4b4b;
-}
-.article:hover {
-  border-color: #5be55b;
-}
-.tag:hover {
-  background-color: #5be55b;
-  color: #fff;
+
+.article p {
+  padding: 5pt;
 }
